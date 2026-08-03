@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full py-section-padding px-gutter flex flex-col md:flex-row justify-between items-center gap-base bg-primary-container dark:bg-black text-on-primary-fixed dark:text-on-primary-fixed">
+    <footer className="w-full py-section-padding px-gutter flex flex-col md:flex-row justify-between items-center gap-base bg-primary-container dark:bg-primary-container text-on-primary-fixed dark:text-on-primary-fixed">
       <div className="flex flex-col items-center md:items-start gap-4">
         <span className="font-headline-md text-headline-md text-surface-container-lowest font-bold">
           DEPORTE CENTRAL
