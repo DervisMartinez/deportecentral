@@ -4,7 +4,7 @@ export default function RadioSection() {
   return (
     <section className="py-section-padding bg-surface-container-low px-gutter" id="radio">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row items-center gap-12 bg-white rounded-xl overflow-hidden border border-outline-variant p-8 md:p-12">
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white rounded-xl overflow-hidden border border-outline-variant p-6 md:p-12">
           <div className="w-full md:w-1/3">
             <div className="relative group rounded-lg overflow-hidden aspect-square border border-outline-variant">
               <Image

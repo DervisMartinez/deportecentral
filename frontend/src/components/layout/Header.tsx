@@ -90,7 +90,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <nav className="md:hidden flex flex-col gap-4 py-4 border-t border-outline-variant dark:border-outline">
+        <nav className="absolute top-16 left-0 w-full bg-surface dark:bg-surface-container shadow-md md:hidden flex flex-col gap-4 py-6 px-gutter border-b border-outline-variant dark:border-outline">
           <Link
             className="text-primary dark:text-on-surface font-label-bold text-label-bold"
             href="/"

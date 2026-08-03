@@ -13,7 +13,7 @@ export default function CoveragesSection() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-card-gap">
           {/* Liga FUTVE Card */}
-          <div className="group relative bg-white border border-outline-variant rounded-lg overflow-hidden flex flex-col h-[500px]">
+          <div className="group relative bg-white border border-outline-variant rounded-lg overflow-hidden flex flex-col h-[400px] md:h-[500px]">
             <div className="relative h-2/3 overflow-hidden">
               <div
                 className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
@@ -27,7 +27,7 @@ export default function CoveragesSection() {
                 </span>
               </div>
             </div>
-            <div className="p-8 flex flex-col justify-center h-1/3">
+            <div className="p-6 md:p-8 flex flex-col justify-center h-1/3">
               <h3 className="font-headline-lg text-headline-lg mb-2">Liga FUTVE</h3>
               <p className="text-on-surface-variant line-clamp-2">
                 Cobertura integral de la primera división de Venezuela. Resultados,
@@ -44,7 +44,7 @@ export default function CoveragesSection() {
           </div>
           
           {/* Copa Libertadores Card */}
-          <div className="group relative bg-white border border-outline-variant rounded-lg overflow-hidden flex flex-col h-[500px]">
+          <div className="group relative bg-white border border-outline-variant rounded-lg overflow-hidden flex flex-col h-[400px] md:h-[500px]">
             <div className="relative h-2/3 overflow-hidden">
               <div
                 className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
@@ -58,7 +58,7 @@ export default function CoveragesSection() {
                 </span>
               </div>
             </div>
-            <div className="p-8 flex flex-col justify-center h-1/3">
+            <div className="p-6 md:p-8 flex flex-col justify-center h-1/3">
               <h3 className="font-headline-lg text-headline-lg mb-2">Copa Libertadores</h3>
               <p className="text-on-surface-variant line-clamp-2">
                 El torneo más prestigioso de Sudamérica. Análisis de los equipos venezolanos y el camino hacia la gloria continental.
@@ -74,7 +74,7 @@ export default function CoveragesSection() {
           </div>
 
           {/* Copa Sudamericana Card */}
-          <div className="group relative bg-white border border-outline-variant rounded-lg overflow-hidden flex flex-col h-[500px]">
+          <div className="group relative bg-white border border-outline-variant rounded-lg overflow-hidden flex flex-col h-[400px] md:h-[500px]">
             <div className="relative h-2/3 overflow-hidden">
               <div
                 className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
@@ -88,7 +88,7 @@ export default function CoveragesSection() {
                 </span>
               </div>
             </div>
-            <div className="p-8 flex flex-col justify-center h-1/3">
+            <div className="p-6 md:p-8 flex flex-col justify-center h-1/3">
               <h3 className="font-headline-lg text-headline-lg mb-2">Copa Sudamericana</h3>
               <p className="text-on-surface-variant line-clamp-2">
                 Sigue cada fase de la Gran Conquista. Toda la información de los clubes en su búsqueda del trofeo continental.
@@ -104,7 +104,7 @@ export default function CoveragesSection() {
           </div>
 
           {/* LVBP Card */}
-          <div className="group relative bg-white border border-outline-variant rounded-lg overflow-hidden flex flex-col h-[500px]">
+          <div className="group relative bg-white border border-outline-variant rounded-lg overflow-hidden flex flex-col h-[400px] md:h-[500px]">
             <div className="relative h-2/3 overflow-hidden">
               <div
                 className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
@@ -119,7 +119,7 @@ export default function CoveragesSection() {
                 </span>
               </div>
             </div>
-            <div className="p-8 flex flex-col justify-center h-1/3">
+            <div className="p-6 md:p-8 flex flex-col justify-center h-1/3">
               <h3 className="font-headline-lg text-headline-lg mb-2">LVBP</h3>
               <p className="text-on-surface-variant line-clamp-2">
                 La emoción del diamante venezolano. Seguimiento detallado de la
