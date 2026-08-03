@@ -35,9 +35,6 @@ export default function Hero() {
       </div>
       <div className="relative z-20 px-gutter container mx-auto text-white">
         <div className="max-w-3xl">
-          <span className="inline-block px-3 py-1 bg-on-tertiary-container text-white font-label-bold rounded-lg mb-6 tracking-wider uppercase text-label-sm">
-            Noticias de última hora
-          </span>
           <h1 className="font-display-lg text-display-lg text-shadow-strong mb-6 leading-tight">
             Deporte Central: El Corazón del Deporte
           </h1>
