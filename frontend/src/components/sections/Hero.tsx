@@ -1,16 +1,37 @@
+"use client";
+import { useState, useEffect } from "react";
+
+const carouselImages = [
+  "/carrusel/1.jpeg",
+  "/carrusel/2.jpeg",
+  "/carrusel/3.jpeg",
+];
+
 export default function Hero() {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % carouselImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative w-full h-[85vh] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-primary-container/40 z-10"></div>
-        <div
-          className="w-full h-full bg-cover bg-center transition-transform duration-1000 hover:scale-105"
-          data-alt="A cinematic, high-speed action shot of a professional football match in a grand stadium under bright floodlights. The camera captures a player in mid-air during a dynamic strike, with a subtle motion blur effect emphasizing the intensity of the game. The lighting is dramatic, highlighting the textures of the jersey and the grass. The overall atmosphere is prestigious and energetic, dominated by deep navy blues and sharp contrasts of light."
-          style={{
-            backgroundImage:
-              "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCFzpF6mTctzFKbARIJZMJr8pbcCJcrmXdkvQwmzo_-sz6Un-YZGpnlB--Y42XkDEdFhLhzBxJ2hy0vGj5xixC-5O3GhhcaVikYX7BLk5t4cdj7KJDxIQKwZjBeIF58Xhc9zFxeFqT0AtGZPiguFGJm40_8FLYrG_YzmQKTeA4PVdgl9JaklqhgbEQwO-rFqDGh_Zr24a2I33KzStk4e1pm1sqcbNlofObC4O2GSXcvRXqie-BKMkca6g')",
-          }}
-        ></div>
+        {/* Background carousel */}
+        {carouselImages.map((src, index) => (
+          <div
+            key={src}
+            className={`absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out ${
+              index === currentImage ? "opacity-100 scale-105" : "opacity-0 scale-100"
+            }`}
+            style={{ backgroundImage: `url('${src}')` }}
+          />
+        ))}
+        {/* Blue gradient overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-container/80 via-primary-container/40 to-transparent z-10"></div>
       </div>
       <div className="relative z-20 px-gutter container mx-auto text-white">
         <div className="max-w-3xl">

@@ -33,7 +33,7 @@ export default function AboutSection() {
             <div className="flex gap-12 mt-10">
               <div>
                 <p className="font-display-lg text-display-lg text-primary-container">
-                  15+
+                  6+
                 </p>
                 <p className="font-label-bold text-on-surface-variant uppercase tracking-widest text-label-sm">
                   Años de Experiencia
